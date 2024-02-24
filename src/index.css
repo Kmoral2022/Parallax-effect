@@ -1,0 +1,119 @@
+.parallax-container {
+  overflow-x: hidden;
+}
+
+.parallax {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.parallax-content {
+  text-align: center;
+}
+
+.content {
+  padding: 50px 0;
+  text-align: center;
+}
+
+h1 {
+  color: black;
+  font-size: 70px;
+  margin-bottom: 13cm;
+}
+
+.lady {
+color: red;
+font-size:25px;
+}
+.ab {
+  text-decoration: underline;
+}
+
+@keyframes colorChange {
+  0% { color: red; }
+  50% { color: blue; }
+  100% { color: green; }
+}
+
+.tumi {
+  animation: colorChange 3s infinite; /* Change color every 3 seconds, and repeat infinitely */
+  font-size: 25px;
+}
+
+@keyframes moveInOut {
+  0% { transform: translateX(-100%); opacity: 0; }
+  50% { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(100%); opacity: 0; }
+}
+
+.tila  {
+  animation: moveInOut 10s ease-in-out infinite; /* Adjust duration, timing function, and iteration as needed */
+  color: red;
+  font-size: 40px;
+  margin-bottom: 13cm;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tope {
+  color: blue;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+@keyframes scatterDisappear {
+  0% { transform: translate(0, 0) rotate(0); opacity: 1; }
+  100% { transform: translate(-100vw, -100vh) rotate(720deg); opacity: 0; }
+}
+
+.tilo {
+  animation: scatterDisappear 10s ease-in-out; /* Adjust duration and timing function as needed */
+  color: black;
+  font-size: 40px;
+  margin-bottom: 13cm;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.tile {
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  10%, 90% { transform: translateX(-5px); }
+  20%, 80% { transform: translateX(5px); }
+  30%, 50%, 70% { transform: translateX(-10px); }
+  40%, 60% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+
+.tike {
+  animation: shake 2s infinite; /* Adjust duration and iteration count as needed */
+  text-decoration: underline;
+}
+@keyframes moveInOut {
+  0% { transform: translateX(-100%); opacity: 0; }
+  50% { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(100%); opacity: 0; }
+}
+
+.tika  {
+  animation: moveInOut 10s ease-in-out infinite; /* Adjust duration, timing function, and iteration as needed */
+  color: red;
+  font-size: 30px;
+  font-style: italic;
+  margin-bottom: 13cm;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.tilu {
+  color: black;
+  font-weight: 800;
+  font-size: 20px;
+}
